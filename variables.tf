@@ -18,6 +18,11 @@ variable "hosted-zone" {
 
 # AWS
 
+variable "aws_region" {
+  description = "The region to create resources."
+  default     = "us-east-1"
+}
+
 variable "create_aws_dns_zone" {
   description = "Set to true if you want to deploy the AWS delegated zone."
   type        = bool
