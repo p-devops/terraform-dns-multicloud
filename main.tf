@@ -5,4 +5,9 @@ terraform {
     google  = ">= 3.5"
     azurerm = ">= 1.42"
   }
+  
+  provider "aws" {
+    region  = var.aws_region
+  }
+
 }
